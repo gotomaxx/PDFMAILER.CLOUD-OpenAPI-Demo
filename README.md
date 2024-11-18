@@ -2,7 +2,7 @@
 
 PDFMAILER.CLOUD erzeugt aus den angebotenen REST APIs eine OpenAPI Spezifikation im YAML oder JSON Format, welches online heruntergeladen werden kann: [YAML](https://post.gotomaxx.com/service/rest/outgoing/swagger-config.yaml) [JSON](https://post.gotomaxx.com/service/rest/outgoing/swagger-config.json)
 
-Diese API Spezifikation kann verwendet werden, um automatisiert SDKs für diverse Programmiersprachen zu verwenden. In diesem Beispiel für .NET (C#) wurde der [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) mit diesem Kommando verwendet:
+Diese API Spezifikation kann verwendet werden, um automatisiert SDKs für diverse Programmiersprachen zu generieren. In diesem Beispiel für .NET (C#) wurde der [OpenAPI Generator](https://github.com/OpenAPITools/openapi-generator) mit diesem Kommando verwendet:
 
 ```bash
 java -jar openapi-generator-cli.jar generate -i https://post.gotomaxx.com/PORTALNAME/service/rest/outgoing/swagger-config.yaml -g csharp-functions -o ./SDK/
